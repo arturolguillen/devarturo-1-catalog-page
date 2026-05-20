@@ -1,3 +1,7 @@
+import FilterBar from "@/components/FilterBar";
+import FilterBarButton from "@/components/FilterBarButton";
+import FilterBarClearButton from "@/components/FilterBarClearButton";
+import FilterBarSeparator from "@/components/FilterBarSeparator";
 import Navbar from "@/components/Navbar";
 import NavbarLinks from "@/components/NavbarLinks";
 import NavbarShoppingBagButton from "@/components/NavbarShoppingBagButton";
@@ -19,6 +23,13 @@ export default function Home() {
                     title={<PageHeaderTitle />}
                     description={<PageHeaderDescription />}
                 />
+                <FilterBar>
+                    <FilterBarButton>{'Tueste'}</FilterBarButton>
+                    <FilterBarButton>{'Región'}</FilterBarButton>
+                    <FilterBarButton>{'Equipamento'}</FilterBarButton>
+                    <FilterBarSeparator />
+                    <FilterBarClearButton>{'Limpiar filtros'}</FilterBarClearButton>
+                </FilterBar>
             </main>
         </>
     );
