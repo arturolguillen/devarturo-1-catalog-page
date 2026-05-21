@@ -28,7 +28,7 @@ export default function RootLayout({
             lang="en"
             className={`${dmSans.variable} ${ebGaramond.variable} antialiased`}
         >
-            <body className="font-display">{children}</body>
+            <body className="font-display flex flex-col min-h-dvh">{children}</body>
         </html >
     );
 }

@@ -27,7 +27,7 @@ export default function Home() {
                 <NavbarTitle />
                 <NavbarShoppingBagButton />
             </Navbar>
-            <main className="mt-20">
+            <main className="mt-20 flex-1">
                 <PageHeader>
                     <PageHeaderTitle />
                     <PageHeaderDescription />
