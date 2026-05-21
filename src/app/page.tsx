@@ -22,16 +22,16 @@ import products from "@/products";
 export default function Home() {
     return (
         <>
-            <Navbar
-                links={<NavbarLinks />}
-                title={<NavbarTitle />}
-                shoppingBagButton={<NavbarShoppingBagButton />}
-            />
+            <Navbar>
+                <NavbarLinks />
+                <NavbarTitle />
+                <NavbarShoppingBagButton />
+            </Navbar>
             <main className="mt-20">
-                <PageHeader
-                    title={<PageHeaderTitle />}
-                    description={<PageHeaderDescription />}
-                />
+                <PageHeader>
+                    <PageHeaderTitle />
+                    <PageHeaderDescription />
+                </PageHeader>
                 <FilterBar>
                     <FilterBarButton>{'Tueste'}</FilterBarButton>
                     <FilterBarButton>{'Región'}</FilterBarButton>
