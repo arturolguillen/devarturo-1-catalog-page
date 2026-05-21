@@ -9,6 +9,9 @@ import NavbarTitle from "@/components/NavbarTitle";
 import PageHeader from "@/components/PageHeader";
 import PageHeaderDescription from "@/components/PageHeaderDescription";
 import PageHeaderTitle from "@/components/PageHeaderTitle";
+import ProductGrid from "@/components/ProductGrid";
+import ProductItem from "@/components/ProductItem";
+import products from "@/products";
 
 export default function Home() {
     return (
@@ -30,6 +33,11 @@ export default function Home() {
                     <FilterBarSeparator />
                     <FilterBarClearButton>{'Limpiar filtros'}</FilterBarClearButton>
                 </FilterBar>
+                <ProductGrid>
+                    {products.map(product => (
+                        <ProductItem key={product.id} product={product} />
+                    ))}
+                </ProductGrid>
             </main>
         </>
     );
