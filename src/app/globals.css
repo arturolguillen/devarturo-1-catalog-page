@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+@plugin "@tailwindcss/forms";
 @theme inline {
     --font-display: var(--font-dm-sans);
     --font-heading: var(--font-eb-garamond);
