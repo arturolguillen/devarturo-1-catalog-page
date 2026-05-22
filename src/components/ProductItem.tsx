@@ -21,7 +21,8 @@ export default function ProductItem({ product }: {
                     className="w-full h-auto block transition-transform duration-1000 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-stone-900/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <button className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white text-stone-900 px-8 py-3 text-xs font-bold uppercase tracking-widest whitespace-nowrap opacity-0 translate-y-2.5 transition-all divide-purple-400 ease-out group-hover:opacity-100 group-hover:translate-y-0 hover:bg-stone-900 hover:text-white cursor-pointer shadow-sm">{addToCartText}</button>
+                {/* <button className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white text-stone-900 px-8 py-3 text-xs font-bold uppercase tracking-widest whitespace-nowrap opacity-0 translate-y-2.5 transition-all divide-purple-400 ease-out group-hover:opacity-100 group-hover:translate-y-0 hover:bg-stone-900 hover:text-white cursor-pointer shadow-sm">{addToCartText}</button> */}
+                <button className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white text-stone-900 px-8 py-3 text-xs font-bold uppercase tracking-widest whitespace-nowrap hover:bg-stone-900 hover:text-white cursor-pointer shadow-sm transition-all ease-out xl:opacity-0 xl:translate-y-2.5 xl:group-hover:opacity-100 xl:group-hover:translate-y-0">{addToCartText}</button>
             </div>
             <div className="mt-4">
                 <p className="text-xs text-stone-900 uppercase tracking-wide mb-1">{tag}</p>
